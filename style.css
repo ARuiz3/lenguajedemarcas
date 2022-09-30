@@ -12,3 +12,6 @@ a {
     border-width: 3px;
     border-style: solid;
     }
+    ul {
+        list-style: none;
+    }
