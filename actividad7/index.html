@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Rellenar:</legend>
+            <div><input type="radio" id="Inglés" name="fav_language" value="INGLÉS">
+            <label for="Inglés">Inglés</label></div>
+            <div><input type="radio" id="Alemán" name="fav_language" value="ALEMÁN">
+            <label for="Alemán">Alemán</label></div>
+            <div><input type="radio" id="Francés" name="fav_language" value="FRANCÉS">
+            <label for="Francés">Francés</label></div>
+            <div>
+                <select name="usb" id="usb">
+                    <label for="usb"></label>
+                    <option value="usb">USB</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
+           
+       </fieldset>
+       <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <div>
+                <label for="genero"></label>
+                <select multiple name="genero" id="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="Mujer" id="Mujer">
+                <label for="Mujer">Mujer</label></div>
+                <div><input type="checkbox" name="Hombre" id="Hombre">
+                <label for="Hombre">Hombre</label></div>
+            
+            <div>
+                <label for="fecha">Elija un fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+        </fieldset>
+    </form>
+    <br><br><h4><a href="../index.html">volver al index</a></h4>
+</body>
+</html>
