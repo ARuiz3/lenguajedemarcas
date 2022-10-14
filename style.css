@@ -13,6 +13,23 @@ a {
     border-style: solid;
 
     }
+.boton{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:35px;
+    padding-right:36px;
+    background-color:#7BFF25;
+    border-color: #F69DA1;
+    border-width: 3px;
+    border-style: solid;
+}
     ul {
         list-style: none;
     }
+body{
+    background-color: black;
+}
