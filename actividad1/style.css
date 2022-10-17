@@ -27,3 +27,6 @@ a {
     border-width: 3px;
     border-style: solid;
 }
+ul{
+    font-style: none;
+}
