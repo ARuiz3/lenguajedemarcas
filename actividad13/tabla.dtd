@@ -1,0 +1,9 @@
+<!ELEMENT esquema (mensaje)>
+<!ELEMENT mensaje (remite,destinatario,texto)>
+<!ATTLIST mensaje asunto CDATA #REQUIRED>
+<!ELEMENT remite (nombre,email)>
+<!ELEMENT destinatario (nombre,email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT texto (parrafo+)>
+<!ELEMENT parrafo (#PCDATA)>
