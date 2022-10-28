@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbol SYSTEM "datos.dtd">
+<arbol>
+    <lista raza="Acer monspessulanum">
+        <nombre>Arce de Montpellier, Arce menor</nombre> 
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 6 a 10 metros</altura>
+        <forma>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</forma>
+        <cprimavera>Haz verde brillante, envés verde blanquecino</cprimavera>
+        <resistencia>Heladas fuertes (hasta -15ºC)</resistencia>
+    </lista>
+    <lista raza="Olea europea">
+        <nombre>Olivo</nombre>
+        <vegetacion>Perenne</vegetacion>
+        <altura>De 8 a 15 metros</altura>
+        <forma>Copa irregular. Tronco principal irregular con bifurcaciones.</forma>
+    </lista>
+    <lista raza="Ramaje tortuoso">
+        <cprimavera>Haz verde oscuro, envés verde plateado</cprimavera>
+        <resistencia>Heladas medias (hasta -10ºC)</resistencia>
+    </lista>
+    <lista raza="Platanus orientalis">
+        <nombre>Platano</nombre>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 20 a 25 metros</altura>
+        <forma>Copa ovoidal. Tronco principal recto. Ramaje expandido</forma>
+        <cprimavera>Haz verde medio, enves verde claro</cprimavera>
+        <cotoño>Ocre</cotoño>
+        <resistencia>Heladas fuertes (hasta -20ºC)</resistencia>
+    </lista>
+    <lista raza="Quercus ilex">
+        <nombre>Encina</nombre>
+        <vegetacion>Perenne</vegetacion>
+        <altura>En torno a 25 metros</altura>
+        <forma>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</forma>
+        <cprimavera>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado</cprimavera>
+        <resistencia>Heladas fuertes (hasta -15ºC)</resistencia>
+    </lista>
+</arbol>

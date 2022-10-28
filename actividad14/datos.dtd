@@ -1,0 +1,10 @@
+<!ELEMENT arbol (lista+)>
+<!ELEMENT lista (nombre?,vegetacion?,altura?,forma?,cprimavera?,cotoño?,resistencia?)>
+<!ATTLIST lista raza CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vegetacion (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+<!ELEMENT forma (#PCDATA)>
+<!ELEMENT cprimavera (#PCDATA)>
+<!ELEMENT cotoño (#PCDATA)>
+<!ELEMENT resistencia (#PCDATA)>
