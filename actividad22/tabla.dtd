@@ -1,0 +1,8 @@
+<!ELEMENT discos (cds+)>
+<!ELEMENT cds (titulo,artista,pais,compañia,precio,año)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT compañia (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
