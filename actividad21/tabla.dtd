@@ -1,0 +1,7 @@
+<!ELEMENT fundaciones (hechos+)>
+<!ELEMENT hechos (fecha)>
+<!ATTLIST hechos descripcion CDATA #REQUIRED>
+<!ELEMENT fecha (dia,mes,año)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>

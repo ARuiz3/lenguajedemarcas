@@ -16,7 +16,7 @@
 <!ELEMENT dir_env (#PCDATA)>
 <!ELEMENT datos_factura (fecha,linea+,base,cuota_iva,total)>
 <!ATTLIST datos_factura n_ped ID #REQUIRED>
-<!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
+<!ATTLIST datos_factura iva NMTOKEN     D>
 <!ATTLIST datos_factura f_pago (efectivo|tarjeta|plazos) #IMPLIED>
 <!ATTLIST datos_factura moneda CDATA #FIXED "euro">
 <!ELEMENT fecha (#PCDATA)>

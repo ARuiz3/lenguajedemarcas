@@ -2,7 +2,7 @@
 <?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <matricula> 
     <personal> 
-        <dni>99223366M</dni> 
+        <dni>99223366M<![CDATA[]]></dni> 
         <nombre>Juan Pardo Martín</nombre> 
         <titulacion>Ingeniería Informática</titulacion> 
         <curso_academico>1997/1998</curso_academico> 
