@@ -1,0 +1,32 @@
+<!ELEMENT factura (dfacturador,dpago,dcliente,dfactura+,total)>
+<!ATTLIST factura nfactura CDATA #REQUIRED>
+<!ELEMENT dfacturador (nombref,direccionf,ciudadf,cif,telf,faxf)>
+<!ELEMENT nombref (#PCDATA)>
+<!ELEMENT direccionf (#PCDATA)>
+<!ELEMENT ciudadf (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telf (#PCDATA)>
+<!ELEMENT faxf (#PCDATA)>
+<!ELEMENT dpago (fechap,npedido,fpago)>
+<!ELEMENT fechap (#PCDATA)>
+<!ELEMENT npedido (#PCDATA)>
+<!ELEMENT fpago (#PCDATA)>
+<!ELEMENT dcliente (ncliente,nombrec,direccionc,poblacion,cp,provincia)>
+<!ELEMENT ncliente (#PCDATA)>
+<!ELEMENT nombrec (#PCDATA)>
+<!ELEMENT direccionc (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT dfactura (ref,descripcion,cant,precio,iva,importe)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cant (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT total (base,piva,cuota)>
+<!ATTLIST total tfactura CDATA #REQUIRED>
+<!ELEMENT base (#PCDATA)>
+<!ELEMENT piva (#PCDATA)>
+<!ELEMENT cuota (#PCDATA)>

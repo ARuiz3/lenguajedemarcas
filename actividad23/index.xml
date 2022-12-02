@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "datos.dtd">
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<factura nfactura="999">
+    <dfacturador>
+        <nombref>Equipos Digitales S.L.</nombref>
+        <direccionf>Av. Valladolid</direccionf>
+        <ciudadf>Madrid 28015</ciudadf>
+        <cif>Q-9876543</cif>
+        <telf>91.777.66.88</telf>
+        <faxf>91.777.66.99</faxf>
+    </dfacturador>
+    <dpago>
+        <fechap>12-01-2005</fechap>
+        <npedido>731</npedido>
+        <fpago>EFECTIVO</fpago>
+    </dpago>
+    <dcliente>
+        <ncliente>879</ncliente>
+        <nombrec>Darío Bueno Gutiérrez</nombrec>
+        <direccionc>Av. Oporto nº7 4ºd</direccionc>
+        <poblacion>Madrid</poblacion>
+        <cp>28043</cp>
+        <provincia>Madrid</provincia>
+    </dcliente>
+    <dfactura>
+        <ref>MII93000F/8</ref>
+        <descripcion>MICRO PENTIUM IV 300MHZ FB800</descripcion>
+        <cant>1</cant>
+        <precio>230 eur.</precio>
+        <iva>16,0</iva>
+        <importe>266,80 eur.</importe>
+    </dfactura>
+    <dfactura>
+        <ref>MB8QDIP4</ref>
+        <descripcion>PLACA BASE QDI P4</descripcion>
+        <cant>1</cant>
+        <precio>180 eur.</precio>
+        <iva>16,0</iva>
+        <importe>208,80 eur.</importe>
+    </dfactura>
+    <dfactura>
+        <ref>MEDD512M32</ref>
+        <descripcion>DIMM DDR 512MB 3200</descripcion>
+        <cant>2</cant>
+        <precio>40 eur.</precio>
+        <iva>16,0</iva>
+        <importe>92,80 eur.</importe>
+    </dfactura>
+    <dfactura>
+        <ref>HD250GSA7</ref>
+        <descripcion>DISCO DURO 250GB S-ATA 7200</descripcion>
+        <cant>4</cant>
+        <precio>120 eur.</precio>
+        <iva>16,0</iva>
+        <importe>556,80 eur.</importe>
+    </dfactura>
+    <total tfactura="1125,10 eur">
+        <base>970,00 eur.</base>
+        <piva>16,0</piva>
+        <cuota>155,20 eur.</cuota>
+    </total>
+</factura>
