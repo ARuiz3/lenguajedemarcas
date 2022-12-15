@@ -55,7 +55,7 @@
         <iva>16,0</iva>
         <importe>556,80 eur.</importe>
     </dfactura>
-    <total tfactura="1125,10 eur">
+    <total tfactura="1125,10eur">
         <base>970,00eur.</base>
         <piva>16,0</piva>
         <cuota>155,20eur.</cuota>
