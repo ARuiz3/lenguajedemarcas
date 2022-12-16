@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/rss/channel">
         <html>
             <head>
@@ -19,15 +19,82 @@
                     </section>
                 </header>
                 <main>
-                    
-                        <xsl:for-each select="item/media:content">
-                        
+                  <section class="row justify-content-center">
+                    <div id="carouselExampleControls1" class="carousel slide w-75" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <xsl:for-each select="item"> 
+                          <xsl:choose>
+                            <xsl:when test="position() =1">  
+                             <div class="carousel-item active">
+                                <p class="text-md-start"><xsl:value-of select="description"/></p>
+                              </div>
+                            </xsl:when>
+                           <xsl:otherwise>
+                             <div class="carousel-item">
+                              <p class="text-md-start"><xsl:value-of select="description"/></p>
+                             </div>
+                            </xsl:otherwise>
+                        </xsl:choose>
                         </xsl:for-each>
-                        
-                      
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row justify-content-center">
+                    <div id="carouselExampleControls2" class="carousel slide w-75" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <xsl:for-each select="item/media:content"> 
+                          <xsl:choose>
+                            <xsl:when test="position() =1">  
+                             <div class="carousel-item active">
+                                <img src="{@url}" class="d-block w-100 img-fluid"/>
+                                <div class="carousel-caption d-none d-md-block text-bg-secondary p-3">
+                                  <h5><xsl:value-of select="media:text"/></h5>
+                                  <p><xsl:value-of select="media:credit"/></p>
+                                </div>
+                              </div>
+                            </xsl:when>
+                           <xsl:otherwise>
+                             <div class="carousel-item">
+                                <img src="{@url}" class="d-block w-100 img-fluid"/>
+                                <div class="carousel-caption d-none d-md-block text-bg-secondary p-3">
+                                  <h5><xsl:value-of select="media:text"/></h5>
+                                  <p><xsl:value-of select="media:credit"/></p>
+                                </div>
+                             </div>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        </xsl:for-each>
+                        </div>
+                      <button id="button1" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button id="button2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </section>
+                  
                 </main>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-            </body>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>            </body>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                  var carousel1 = document.getElementById("carouselExampleControls1");
+                  var carousel2 = document.getElementById("carouselExampleControls2");
+                  var button1 = document.getElementById("button1");
+                  var button2 = document.getElementById("button2");
+                  
+                  // Luego, establece un controlador de eventos para el botón que llame al método slide para ambos carruseles
+                  carousel1.addEventListener("click", ()=>{
+                    carousel1.carousel("slide");
+                    carousel2.carousel("slide");
+                  });
+                  carousel2.addEventListener("click", ()=>{
+                    carousel1.carousel("slide");
+                    carousel2.carousel("slide");
+                  });
+               </script>
         </html>
     </xsl:template>
 </xsl:stylesheet>
