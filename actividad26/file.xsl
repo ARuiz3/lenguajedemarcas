@@ -20,46 +20,34 @@
                 </header>
                 <main>
                   <section class="row justify-content-center">
-                    <div id="carouselExampleControls1" class="carousel slide w-75" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <xsl:for-each select="item"> 
-                          <xsl:choose>
-                            <xsl:when test="position() =1">  
-                             <div class="carousel-item active">
-                                <p class="text-md-start"><xsl:value-of select="description"/></p>
-                              </div>
-                            </xsl:when>
-                           <xsl:otherwise>
-                             <div class="carousel-item">
-                              <p class="text-md-start"><xsl:value-of select="description"/></p>
-                             </div>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        </xsl:for-each>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="row justify-content-center">
-                    <div id="carouselExampleControls2" class="carousel slide w-75" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <xsl:for-each select="item/media:content"> 
                           <xsl:choose>
                             <xsl:when test="position() =1">  
                              <div class="carousel-item active">
-                                <img src="{@url}" class="d-block w-100 img-fluid"/>
-                                <div class="carousel-caption d-none d-md-block text-bg-secondary p-3">
+                                <section style="float:left;width:100%">
+                                  <img src="{@url}" class="d-block w-100 img-fluid"/>
                                   <h5><xsl:value-of select="media:text"/></h5>
                                   <p><xsl:value-of select="media:credit"/></p>
-                                </div>
+                                </section>
+                                <section style="float:left;width:100%">
+                                  <xsl:value-of select="../dcterms:alternative"/>. 
+                                  <a href="{../guid}"> leer mas...</a>
+                                </section>
                               </div>
                             </xsl:when>
                            <xsl:otherwise>
                              <div class="carousel-item">
-                                <img src="{@url}" class="d-block w-100 img-fluid"/>
-                                <div class="carousel-caption d-none d-md-block text-bg-secondary p-3">
+                                <section>
+                                  <img src="{@url}" class="d-block w-100 img-fluid"/>
                                   <h5><xsl:value-of select="media:text"/></h5>
                                   <p><xsl:value-of select="media:credit"/></p>
-                                </div>
+                                </section>
+                                <section style="float:left;width:100%">
+                                  <xsl:value-of select="../dcterms:alternative"/>. 
+                                  <a href="{../guid}">leer mas...</a>
+                                </section>
                              </div>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -79,22 +67,6 @@
                 </main>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>            </body>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                  var carousel1 = document.getElementById("carouselExampleControls1");
-                  var carousel2 = document.getElementById("carouselExampleControls2");
-                  var button1 = document.getElementById("button1");
-                  var button2 = document.getElementById("button2");
-                  
-                  // Luego, establece un controlador de eventos para el botón que llame al método slide para ambos carruseles
-                  carousel1.addEventListener("click", ()=>{
-                    carousel1.carousel("slide");
-                    carousel2.carousel("slide");
-                  });
-                  carousel2.addEventListener("click", ()=>{
-                    carousel1.carousel("slide");
-                    carousel2.carousel("slide");
-                  });
-               </script>
         </html>
     </xsl:template>
 </xsl:stylesheet>
