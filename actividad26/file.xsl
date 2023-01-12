@@ -14,7 +14,6 @@
                     <section>
                         <nav style="background-color: #CCD2C9">
                             <h1 style="text-align: center; font-size: 40; "><a href="{link}" style="color:black; text-decoration: none"> EL PAÍS: el periódico global</a></h1>
-                            <h6 style="text-align: right; margin-top: -34px"><xsl:value-of select="lastBuildDate"/></h6>
                         </nav>
                     </section>
                 </header>
